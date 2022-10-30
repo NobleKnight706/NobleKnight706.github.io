@@ -2,7 +2,7 @@
 - 👀 I’m interested in computers and technology
 - 🌱 I’m currently learning JavaScript
 - 💞️ I’m looking to collaborate on N/A
-- 📫 How to reach me NobleKnight706#8081 on discord
+- 📫 How to reach me NobleKnight706#7991 on discord
 
 <!---
 NobleKnight706/NobleKnight706 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
