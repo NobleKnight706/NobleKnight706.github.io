@@ -9,6 +9,10 @@ body {
 #chatbox {
   height: 400px;
   overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 25px;
+  font-weight: normal;
+  background-color: #36393f83;
 }
 
 .message {
