@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffff;
+    margin: 0;
+}
+
+.Center {
+    text-align: left;
+    margin-top: 20%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.toptext {
+    font-weight: normal;
+    font-size: 42px;
+    color: rgba(255, 255, 255, 0.575);
+}
+
+.subtext {
+    font-weight: normal;
+    font-size: 42px;
+    color: rgba(255, 255, 255, 0.34);
+
+}
+
+.aboutme {
+width: auto;
+margin-top: 10%;
+position: absolute;
+left: 1%;
+transform: skew(-13deg);
+font-size: 32px;
+color: rgba(255, 255, 255, 0.589);
+}
+.aboutme2{
+        bottom: -55%;
+        left: 15%;
+        position: absolute;
+        border-radius: 15px;
+        width: 225px;
+        height: 35px;
+        padding: 1.2rem;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 200px;
+        margin-top: 4%;
+        transition: 0.5s ease-in-out;
+        background-color: #292929;
+        text-decoration: none;
+        color: #ffff;
+        font-weight: bold;
+        font-size: 25px;
+}
+.aboutme3 {
+    bottom: -55%;
+    left: 35%;
+    position: absolute;
+    border-radius: 15px;
+    width: 225px;
+    height: 35px;
+    padding: 1.2rem;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 200px;
+    margin-top: 4%;
+    transition: 0.5s ease-in-out;
+    background-color: #292929;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 70px;
+    color: #ffff;
+    margin-top: 4%;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.masterhead {
+    min-height: 60vh;
+    background: rgb(0, 0, 0);
+
+}
+
+.misson {
+    box-sizing: border-box;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    height: 750px;
+    background-color: #111111;
+}
+
+.contact {
+    box-sizing: border-box;
+    padding: 0 5%;
+    display: flex;
+    height: 250px;
+    background-color: #1a1a1a;
+}
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 16px solid var(--MainColor);
+    animation: bounce 2s ease-in-out infinite;
+    z-index: 9999;
+}
+
+.projects {
+    height: 1000px;
+}
+
+.about {
+    height: 500px;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+ canvas{
+    position: absolute;
+        top: 0;
+        left: -110%;
+        width: auto;
+        height: 75%;
+ }
+ .aboutme{
+    top: 100%;
+ }
+}
+
+.button {
+    border-radius: 15px;
+        width: 95px;
+        height: 35px;
+        padding: 1.2rem;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 200px;
+        margin-top: 4%;
+        transition: 0.5s ease-in-out;
+        background-color: #111111;
+        text-decoration: none;
+        color: #ffff;
+        font-weight: bold;
+        font-size: 25px;
+}
+
+.button:hover{
+    background-color: #ffff;
+    color: #111111;
+}
+
+.aboutme2:hover {
+    background-color: #ffff;
+    color: #292929;
+}
+.aboutme3:hover {
+    background-color: #ffff;
+    color: #292929;
+}
+h3{
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffff;
+    margin-top: 4%;
+    margin-bottom: 0;
+    position: relative;
+}

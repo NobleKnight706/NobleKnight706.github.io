@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffff;
+    margin: 0;
+}
+
+/* Forum */
+input[type=text],
+select,
+textarea {
+    color: #ffff;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffffff00;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #507052;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+input[type=submit]:hover {
+    background-color: #3f5a41;
+}
+
+.containerForum {
+    top: 20%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #cfcbcb00;
+    width: 75%;
+    padding: 20px 190px;
+}
