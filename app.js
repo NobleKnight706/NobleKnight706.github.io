@@ -18,25 +18,42 @@ socket.addEventListener('message', (event) => {
   chatbox.scrollTop = chatbox.scrollHeight;
 });
 
+let canSendMessage = true;
+
 submitButton.addEventListener('click', (event) => {
-  const username = usernameInput.value;
-  const messageText = messageInput.value;
+  if (canSendMessage) {
+    const username = usernameInput.value;
+    const messageText = messageInput.value;
 
-  if (username && messageText) {
-    const message = {
-      username,
-      messageText,
-      timestamp: new Date().toLocaleTimeString(),
-    };
+    if (username && messageText) {
+      const message = {
+        username,
+        messageText,
+        timestamp: new Date().toLocaleTimeString(),
+      };
 
-    socket.send(JSON.stringify(message));
+      socket.send(JSON.stringify(message));
+      messageInput.value = "";
+      // Display message on sender's screen
+      const messageElement = createMessageElement(message);
+      chatbox.appendChild(messageElement);
+      chatbox.scrollTop = chatbox.scrollHeight;
 
-    // Display message on sender's screen
-    const messageElement = createMessageElement(message);
-    chatbox.appendChild(messageElement);
-    chatbox.scrollTop = chatbox.scrollHeight;
+      // Disable submit button
+      submitButton.disabled = true;
+      canSendMessage = false;
+      setTimeout(() => {
+        submitButton.disabled = false;
+        canSendMessage = true;
+      }, 1000);
+    }
+  }
+});
 
-    // Clear input fields
+messageInput.addEventListener('keypress', (event) => {
+  if (event.key === "Enter") {
+    // Simulate button click
+    submitButton.click();
   }
 });
 
