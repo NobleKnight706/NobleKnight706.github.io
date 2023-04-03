@@ -146,3 +146,20 @@ var loop = function(){
 }
             
 loop();
+
+const audiof = document.getElementById("audio");
+const audioBtn = document.getElementById("audioBtn");
+const playIcon = document.getElementById("playIcon");
+const pauseIcon = document.getElementById("pauseIcon");
+
+audioBtn.addEventListener("click", function () {
+  if (audiof.paused) {
+    audiof.play();
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "block";
+  } else {
+    audiof.pause();
+    playIcon.style.display = "block";
+    pauseIcon.style.display = "none";
+  }
+});
