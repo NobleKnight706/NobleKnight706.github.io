@@ -30,7 +30,9 @@ h1 {
     font-size: 42px;
     color: rgba(255, 255, 255, 0.575);
 }
-
+iframe {
+    display: none;
+  }
 .subtext {
     font-weight: normal;
     font-size: 42px;
@@ -281,3 +283,18 @@ h3{
     margin-bottom: 0;
     position: relative;
 }
+#pauseIcon {
+    display: none;
+  }
+  #audioBtn {
+    position: absolute;
+    z-index: 10;
+    font-size: 50px; /* adjust size as needed */
+    padding: 10px 20px; /* adjust padding as needed */
+    bottom: 320px;
+    background-color: transparent;
+    border: none;
+  }
+  #audioBtn i {
+    color: white;
+  }
