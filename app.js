@@ -8,6 +8,8 @@ const socket = new WebSocket('wss://noblesocket.onrender.com');
 
 socket.addEventListener('open', (event) => {
   console.log('WebSocket connection established');
+	const messageElement = createMessageElement("Connected to servers.");
+  chatbox.appendChild(messageElement)
 });
 
 socket.addEventListener('message', (event) => {
