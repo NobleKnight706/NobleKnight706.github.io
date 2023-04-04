@@ -20,7 +20,7 @@ h1 {
 input[type=text],
 select,
 textarea {
-    color: #ffff;
+    color: #000000;
     width: 100%;
     padding: 12px;
     border: 1px solid #ffffff00;
